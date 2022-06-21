@@ -20,11 +20,7 @@ class Loader:
         """
         self.desc = desc
         self.end = end
-        self.timeout = timeout
 
-        self._thread = Thread(target=self._animate, daemon=True)
-        self.steps = ["⢿", "⣻", "⣽", "⣾", "⣷", "⣯", "⣟", "⡿"]
-        self.done = False
 
     def start(self):
         self._thread.start()
